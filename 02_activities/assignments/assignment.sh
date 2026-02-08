@@ -37,7 +37,7 @@ mkdir data
 mv rawdata data/raw
 
 # 3. List the contents of the ./data/raw directory
-#ls data/raw
+ls data/raw
 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
 #mkdir -p data/processed/server_logs  data/processed/user_logs data/processed/event_logs
