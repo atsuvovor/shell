@@ -21,7 +21,10 @@ touch README.md
 touch analysis/main.py
 
 # download client data
-curl -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
+#Because I'm running Git Bash on Windows, crrl is using Windows Schanneel(SSL backend) and cannot reach the certificate revocation server
+#so the HTTPS download is bloked, curl failed.
+#curl -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
+curl -k -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
 unzip -q rawdata.zip
 
 ###########################################
@@ -31,7 +34,7 @@ unzip -q rawdata.zip
 mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw
-#mv rawdata data/raw
+mv rawdata data/raw
 
 # 3. List the contents of the ./data/raw directory
 
